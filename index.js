@@ -35,11 +35,34 @@ var hide = function (id) {
     $(id).style.display = 'none';
 }
 
+var hideCopy = function (id) {
+    copystatusEle.textContent = "";
+    document.body.style.overflow = "visible";
+    $(id).style.display = 'none';
+}
+
 function copyToClipboard(element) {
     /* Copy text into clipboard */
-    navigator.clipboard.writeText
+    if(element == "#p1")
+    {
+        navigator.clipboard.writeText
+        ("FoodMunch15");
+        document.getElementById("copyicon1").classList.remove("fa-bounce");
+    }
+    if(element == "#p2")
+    {
+        navigator.clipboard.writeText
         ("FoodMunch25");
-    iconELement.classList.remove("fa-bounce");
+        document.getElementById("copyicon2").classList.remove("fa-bounce");
+    }
+    if(element == "#p3")
+    {
+        navigator.clipboard.writeText
+        ("FoodMunch30");
+        document.getElementById("copyicon3").classList.remove("fa-bounce");
+    }
+
+
     copystatusEle.textContent = "copied";
 
 }

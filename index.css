@@ -438,10 +438,10 @@ html{
     display: none;
     position: fixed;
     padding: 10px;
-    width: 480px;
+    width: 580px;
     left: 43%;
     margin-left: -150px;
-    height: 280px;
+    height: 360px;
     top: 50%;
     margin-top: -100px;
     background: #FFF;

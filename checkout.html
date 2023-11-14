@@ -251,6 +251,54 @@
                     cartItemsList.insertBefore(promoItem, cartItemsList.firstChild);
                     bool = true;
                 }
+                if (enteredPromoCode === "FoodMunch15" && bool === false) {
+                    // Apply a 15% discount
+                    const discount = (currentTotalCost * 0.15);
+                    console.log(discount)
+
+                    currentTotalCost -= discount;
+                    console.log(currentTotalCost)
+                    totalValue.textContent = `$ ${currentTotalCost}`;
+
+                    // Create a list item for the promotion
+                    const promoItem = document.createElement("li");
+                    promoItem.className = "list-group-item d-flex justify-content-between lh-sm";
+                    promoItem.innerHTML = `
+                    <div>
+                        <h6 class="my-0">Promotion (15% off)</h6>
+                    </div>
+                    <span class="text-success">-$${discount.toFixed(2)}</span>
+                    
+                `;
+
+                    // Insert the promoItem at the top of the list
+                    cartItemsList.insertBefore(promoItem, cartItemsList.firstChild);
+                    bool = true;
+                }
+                if (enteredPromoCode === "FoodMunch30" && bool === false) {
+                    // Apply a 30% discount
+                    const discount = (currentTotalCost * 0.30);
+                    console.log(discount)
+
+                    currentTotalCost -= discount;
+                    console.log(currentTotalCost)
+                    totalValue.textContent = `$ ${currentTotalCost}`;
+
+                    // Create a list item for the promotion
+                    const promoItem = document.createElement("li");
+                    promoItem.className = "list-group-item d-flex justify-content-between lh-sm";
+                    promoItem.innerHTML = `
+                    <div>
+                        <h6 class="my-0">Promotion (30% off)</h6>
+                    </div>
+                    <span class="text-success">-$${discount.toFixed(2)}</span>
+                    
+                `;
+
+                    // Insert the promoItem at the top of the list
+                    cartItemsList.insertBefore(promoItem, cartItemsList.firstChild);
+                    bool = true;
+                }
                 else {
 
                     promoCodeText.textContent = "Invalid Promo Code";

@@ -287,18 +287,32 @@
                             <div class="popup" id="popup">
                                 <p class="p1">PROMO CODE</p>
                                 <br />
+
+                                <input type="text" class="p2 " id="p1" readonly value="foodMunch15" />
+                                <label for="p1">
+                                    <i class="fa-regular fa-copy fa-bounce fa-2xl" onclick="copyToClipboard('#p1')"
+                                        id="copyicon1"></i>
+                                </label>
+
                                 <input type="text" class="p2 " id="p2" readonly value="foodMunch25" />
                                 <label for="p2">
                                     <i class="fa-regular fa-copy fa-bounce fa-2xl" onclick="copyToClipboard('#p2')"
-                                        id="copyicon"></i>
+                                        id="copyicon2"></i>
                                 </label>
+
+                                <input type="text" class="p2 " id="p3" readonly value="foodMunch30" />
+                                <label for="p2">
+                                    <i class="fa-regular fa-copy fa-bounce fa-2xl" onclick="copyToClipboard('#p3')"
+                                        id="copyicon3"></i>
+                                </label>
+
                                 <p id="copystatus">
 
                                 </p>
                                 <br />
                                 <br />
                                 <div>
-                                    <button id="closeBTN" class="button" onclick="hide('popup')">Close</button>
+                                    <button id="closeBTN" class="button" onclick="hideCopy('popup')">Close</button>
 
                                 </div>
                                 <br />
