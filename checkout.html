@@ -216,6 +216,7 @@
             const applyPromoCodeButtonele = document.getElementById("applyPromoCodeButton");
             const promoCodeText = document.getElementById("promoCodeText");
             const discountAmount = document.getElementById("discountAmount");
+            let bool = false;
 
 
 
@@ -226,7 +227,7 @@
                 let currentTotalCost = totalCost;
                 console.log(promoCodeInput.value);
 
-                if (enteredPromoCode === "FoodMunch25") {
+                if (enteredPromoCode === "FoodMunch25" && bool === false) {
                     // Apply a 25% discount
                     const discount = (currentTotalCost * 0.25);
                     console.log(discount)
@@ -243,10 +244,12 @@
                         <h6 class="my-0">Promotion (25% off)</h6>
                     </div>
                     <span class="text-success">-$${discount.toFixed(2)}</span>
+                    
                 `;
 
                     // Insert the promoItem at the top of the list
                     cartItemsList.insertBefore(promoItem, cartItemsList.firstChild);
+                    bool = true;
                 }
                 else {
 
