@@ -188,6 +188,13 @@ html{
     margin-right: 10px;
 
 }
+.search
+{
+    margin-left: 10px;
+    height: 30px;
+    align-self: center;
+    margin-bottom: 5px;
+}
 
 .button1 {
     color: #d0b200;
