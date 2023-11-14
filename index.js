@@ -304,6 +304,14 @@ function addtomenu(obj) {
                 totalEle.textContent = y;
                 cartText.textContent = inCartBtnText(getCartItem(item));
             }
+            let cartDetails = getCartItem(item);
+
+            if (cartDetails && cartDetails.count > 0) {
+                
+                --cartDetails.count; // Decrease the count in the cart
+                cartText.textContent = inCartBtnText(getCartItem(item));
+            }
+            
             if (count <= 0) {
                 
                 numberpara.textContent = "0";
@@ -312,13 +320,7 @@ function addtomenu(obj) {
 
             }
         
-        let cartDetails = getCartItem(item);
-
-        if (cartDetails && cartDetails.count > 0) {
-            
-            --cartDetails.count; // Decrease the count in the cart
-            cartText.textContent = inCartBtnText(getCartItem(item));
-        }
+       
 
         })
         //(+)Element
