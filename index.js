@@ -1,6 +1,7 @@
 let openShopping = document.querySelector('.shopping');
 let closeShopping = document.querySelector('.closeShopping');
 let list = document.querySelector('.list');
+let searchEle = document.getElementById("search");
 let listCard = document.querySelector('.listCard');
 let body = document.querySelector('body');
 let total = document.querySelector('.total');
@@ -177,6 +178,24 @@ toggleEle.addEventListener("click", function (event) {
         addtomenu(each);
     }
 });
+
+
+searchEle.addEventListener("input" ,function(event)
+{
+
+    let searchedarry = updatedarray.filter((each)=>
+    {
+        return each.item.toLowerCase().includes(event.target.value.toLowerCase())
+    })
+    exp.innerHTML = "";
+
+    for (let each of searchedarry) {
+        addtomenu(each);
+    }
+
+    
+
+})
 
 
 
