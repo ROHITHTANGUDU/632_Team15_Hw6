@@ -499,3 +499,7 @@ html{
   {
       display: inline-block;
   }
+
+  .helpCheck{
+    background-color: blue;
+  }
