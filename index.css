@@ -4,10 +4,13 @@
     height: 70px;
     width: 80px;
 }
+
+
 .switch
 {
-    align-self:center;
     margin-left: auto;
+    align-self:center;
+   
 }
 
 .drop-down

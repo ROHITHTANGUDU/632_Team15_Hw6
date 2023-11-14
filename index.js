@@ -16,7 +16,7 @@ let iconELement = document.getElementById("copyicon");
 let copystatusEle = document.getElementById("copystatus");
 let wholecart = document.getElementById("cart");
 let selectboxEle = document.getElementById("selectbox");
-let toggleEle = document.getElementById("flexSwitchCheckDefault");
+let toggleEle = document.getElementById("customSwitch1");
 const orderNowButton = document.getElementById("order-now-button");
 
 
