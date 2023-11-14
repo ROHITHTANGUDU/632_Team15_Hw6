@@ -69,6 +69,13 @@ let array = [
         itemCategory : "non-veg"
     },
     {
+        item: "Veg Biryani",
+        imageUrl: "images/veg-biryani-recipe.jpeg",
+        cost: 30.00,
+        category : "Main course",
+        itemCategory : "veg"
+    },
+    {
         item: "Chilli mushroom",
         imageUrl: "images/cm.jpeg",
         cost: 25.00,
@@ -95,7 +102,13 @@ let array = [
         cost: 26.00,
         category : "Desserts",
         itemCategory : "veg"
-    },
+    },    {
+        item: "Cheesecake",
+        imageUrl: "images/baked-cherry-cheesecake.jpeg",
+        cost: 26.00,
+        category : "Desserts",
+        itemCategory : "non-veg"
+    }
 
 ];
 let cartItemsArray = [];
